@@ -13,7 +13,7 @@ const Navbar = () => {
     ]
     return (
         <nav>
-            <div onClick={()=> setOpen(!open)} className='w-6 h-6 md:hidden'>
+            <div onClick={()=> setOpen(!open)} className='w-6 h-6 md:hidden '>
             {open ? <XIcon></XIcon> :<MenuIcon></MenuIcon>}
             </div>
             <ul className={`md:flex justify-center duration-500 ease-in absolute ${open ? 'top-6': 'top-[-120px]'}`}>
